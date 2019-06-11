@@ -1,0 +1,118 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Umlaut Hub</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gugi:400,600,800">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="dropbox-container">
+        <div id="dropbox" class="dropbox">
+            <div class="message">
+                <h3>Please open the page with Chrome browser!</h3>
+                <div class="warning-message" id="warning-message">
+                    This site is optimized for Google Chrome Browser! Please follow this link to the
+                    <a href="https://www.google.com/chrome/" target="_blank">Download</a> and reopen the site in Chrome.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="left">
+            <div class="spinner">
+                <span>The Umlaut Hub</span>
+            </div>
+        </div>
+        <div class="fixed-table">
+            <table width="100%" class="table" id="fixedtable">
+                <col width="82%">
+                <col width="170px">
+                <col width="1px">
+                <col width="160px">
+                <tr>
+                    <th></th>
+                    <th>Level</th>
+                    <th></th>
+                    <th>Suite</th>
+                </tr>
+            </table>
+        </div>
+        <div class="right">
+            <div class="table-container">
+                <table id="table-1" width="100%" class="table">
+                    <col width="80%">
+                    <col width="10%">
+                    <col width="10%">
+                </table>
+                <table id="table-2" width="100%" class="table">
+                    <col width="80%">
+                    <col width="10%">
+                    <col width="10%">
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="modal-overlay">
+        <div id="modal-overlay-hide"></div>
+        <div id="modal" style="width:80%;height:90%">
+            <div class="modal" id="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      
+                        <div class="modal-body">
+                            <div>
+                                <div id="divTable" style="display:none">
+                                    <button type="button" id="btnAdd" class="btn btn-info">Add New</button>
+
+                                    <table class="table" id="tblData">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                <td>Suite</td>
+                                                <td>Level</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </thead>
+                                        <tbody> </tbody>
+                                    </table>
+                                </div>
+                                <form id="frmDetail" style="display:none">
+                                    <label id="lblID" style="display:none">Hello</label>
+                                    <div class="form-group"> <label for="exampleInputEmail1">Company Name</label> <input type="text" class="form-control" id="txtCompany" aria-describedby="emailHelp" placeholder="Enter Company Name"> <small id="emailHelp" class="form-text text-muted">Please enter the full company name.</small> </div>
+                                    <div class="form-group"> <label for="exampleInputEmail1">Level</label> <input type="number" class="form-control" id="txtLevel" aria-describedby="emailHelp" placeholder="Enter Level "> <small id="emailHelp" class="form-text text-muted">Please enter the respective level.</small> </div>
+                                    <div class="form-group"> <label for="exampleInputEmail1">Suite</label> <input type="text" class="form-control" id="txtSuite" aria-describedby="emailHelp" placeholder="Enter Suite"> <small id="emailHelp" class="form-text text-muted">Please enter the Full Suite Number.</small> </div>
+                                    <button type="button" id="btnAddSubmit" class="btn btn-info">Submit</button>
+
+                                    <button type="button" id="btnSubmit" class="btn btn-primary">Submit</button>
+                                    <button type="reset" id="btnCancel" class="btn btn-danger">Cancel</button>
+                                </form>
+                            </div>
+                        </div>
+                 
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+    <button id="modal-open">
+        <svg viewBox="0 0 24 24">
+            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" fill="currentColor" />
+            <path fill="none" d="M0 0h24v24H0z" />
+        </svg>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

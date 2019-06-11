@@ -1,0 +1,2 @@
+please execute the daatabas script and  the program via localhost
+http://localhost:56833/Home/directory.html
